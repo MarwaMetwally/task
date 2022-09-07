@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
-
+import 'package:auto_size_text/auto_size_text.dart';
 import '../common/style/colors.dart';
 import '../common/style/fonts.dart';
 
@@ -42,7 +42,7 @@ class ListTaskItem extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(
+                  AutoSizeText(
                     taskTitle,
                     maxLines: 2,
                     style: AppTextStyle.body
@@ -51,7 +51,7 @@ class ListTaskItem extends StatelessWidget {
                   SizedBox(
                     height: 5.h,
                   ),
-                  Text(
+                  (AutoSizeText(
                     taskDecription,
                     maxLines: 2,
                     style: AppTextStyle.lableSmall.copyWith(
@@ -59,7 +59,7 @@ class ListTaskItem extends StatelessWidget {
                         fontSize: 16,
                         color: AppColors.mainLight),
                     textAlign: TextAlign.right,
-                  ),
+                  )),
                   SizedBox(
                     height: 15.h,
                   )

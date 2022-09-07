@@ -38,8 +38,9 @@ dependencies:
   date_picker_timeline: ^1.2.3
   # To date and time format
   intl: ^0.17.0
-  # To responsive UI
+  # display a reasonable layout on different screen sizes!
   flutter_screenutil: ^5.5.4
+  auto_size_text: ^3.0.0
   
 
   
