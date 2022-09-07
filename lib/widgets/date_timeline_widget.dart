@@ -11,7 +11,7 @@ class DateTimeLine extends StatelessWidget {
   Widget build(BuildContext context) {
     return DatePicker(
       DateTime.now(),
-      height: 65.h,
+      height: 70.h,
       monthTextStyle: const TextStyle(fontSize: 0),
       initialSelectedDate: DateTime.now(),
       selectionColor: AppColors.mainColor,

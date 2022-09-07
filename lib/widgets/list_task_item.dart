@@ -45,8 +45,10 @@ class ListTaskItem extends StatelessWidget {
                   AutoSizeText(
                     taskTitle,
                     maxLines: 2,
-                    style: AppTextStyle.body
-                        .copyWith(fontWeight: FontWeight.bold, fontSize: 26),
+                    maxFontSize: 26.sp,
+                    style: AppTextStyle.body.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   SizedBox(
                     height: 5.h,
@@ -54,9 +56,9 @@ class ListTaskItem extends StatelessWidget {
                   (AutoSizeText(
                     taskDecription,
                     maxLines: 2,
+                    maxFontSize: 16.sp,
                     style: AppTextStyle.lableSmall.copyWith(
                         fontWeight: FontWeight.bold,
-                        fontSize: 16,
                         color: AppColors.mainLight),
                     textAlign: TextAlign.right,
                   )),
