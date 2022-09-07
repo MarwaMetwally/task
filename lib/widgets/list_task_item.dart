@@ -1,4 +1,3 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
@@ -43,21 +42,21 @@ class ListTaskItem extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  AutoSizeText(
+                  Text(
                     taskTitle,
                     maxLines: 2,
                     style: AppTextStyle.body
-                        .copyWith(fontWeight: FontWeight.bold, fontSize: 26.sp),
+                        .copyWith(fontWeight: FontWeight.bold, fontSize: 26),
                   ),
                   SizedBox(
                     height: 5.h,
                   ),
-                  AutoSizeText(
+                  Text(
                     taskDecription,
                     maxLines: 2,
                     style: AppTextStyle.lableSmall.copyWith(
                         fontWeight: FontWeight.bold,
-                        fontSize: 16.sp,
+                        fontSize: 16,
                         color: AppColors.mainLight),
                     textAlign: TextAlign.right,
                   ),

@@ -25,6 +25,14 @@ class _HomeScreenState extends State<HomeScreen> {
   final today =
       DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day);
   final ScrollController _scrollController = ScrollController();
+  @override
+  void initState() {
+    super.initState();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitDown,
+      DeviceOrientation.portraitUp,
+    ]);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -159,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Positioned(
                 left: 24.w,
                 right: 0,
-                bottom: 5.h,
+                bottom: 0,
                 top: deviceHeight * 0.46,
                 child: Scrollbar(
                   controller: _scrollController,
@@ -175,7 +183,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           itemBuilder: (context, index) => Stack(
                                 children: [
                                   SizedBox(
-                                    height: 145.h,
+                                    height: 150.h,
                                   ),
                                   ListTaskItem(
                                     taskTitle: Constants.taskTitle[index],
@@ -196,5 +204,14 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
     );
+  }
+
+  @override
+  dispose() {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+    super.dispose();
   }
 }

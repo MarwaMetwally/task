@@ -33,7 +33,7 @@ class ContainerWaves extends CustomClipper<Path> {
     var point10 = Offset(0, size.height * 0.8);
 
     path.quadraticBezierTo(point9.dx, point9.dy, point10.dx, point10.dy);
-    // path.lineTo(0, size.height);
+
     path.close();
 
     return path;

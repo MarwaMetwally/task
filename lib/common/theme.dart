@@ -8,6 +8,8 @@ class AppTheme {
       interactive: true,
       thickness: MaterialStateProperty.all(3),
       showTrackOnHover: true,
+      mainAxisMargin: 10,
+
       isAlwaysShown: true,
       trackColor: MaterialStateProperty.all(const Color(0xff245793)),
       thumbColor: MaterialStateProperty.all(AppColors.white),

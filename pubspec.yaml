@@ -40,7 +40,7 @@ dependencies:
   intl: ^0.17.0
   # To responsive UI
   flutter_screenutil: ^5.5.4
-  auto_size_text: ^3.0.0
+  
 
   
 
